@@ -1,20 +1,18 @@
-* {
+*,*:after, *:before {
     box-sizing: border-box;
-}
-
-body {
     margin: 0;
     padding: 0;
 }
 
 
 .centrar {
-    position: relative;
+    position: fixed;
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 30s;
 }
 
 .caja {
@@ -77,4 +75,13 @@ body {
     z-index: 7;
     animation-delay: 5s;
     animation-duration: 1s !important;
+}
+
+.verde {
+    background-color: #c0d23e;
+    height: 20rem;
+}
+
+.morado {
+    background-color: #5c323e;
 }
